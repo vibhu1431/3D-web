@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Person Going to Office</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky color="#87CEEB"></a-sky>
+
+      <a-plane rotation="-90 0 0" width="50" height="50" color="#7CFC00"></a-plane>
+
+      <a-box position="0 5 -20" width="10" height="10" depth="10" color="#8B4513"></a-box>
+      <a-box position="-4 5 -20" width="1" height="10" depth="10" color="#A0522D"></a-box>
+      <a-box position="4 5 -20" width="1" height="10" depth="10" color="#A0522D"></a-box>
+      <a-box position="0 0.5 -14.5" width="2" height="1" depth="1" color="#000000"></a-box>
+      <a-box position="2 7 -20" width="1" height="3" depth="1" color="#A0522D"></a-box>
+      <a-box position="-2 7 -20" width="1" height="3" depth="1" color="#A0522D"></a-box>
+
+      <a-box position="15 5 -25" width="10" height="10" depth="10" color="#8B0000"></a-box>
+      <a-box position="15 5 -15" width="10" height="10" depth="10" color="#800000"></a-box>
+      <a-box position="-15 5 -25" width="10" height="10" depth="10" color="#2E8B57"></a-box>
+      <a-box position="-15 5 -15" width="10" height="10" depth="10" color="#006400"></a-box>
+
+      <a-box position="0 1.6 5" rotation="0 0 0" width="0.5" height="1" depth="0.5" color="#FFFFFF">
+        <a-animation attribute="position" to="0 1.6 -15" dur="8000" easing="linear" fill="forwards"></a-animation>
+      </a-box>
+      <a-sphere position="0 2.3 5" radius="0.3" color="#FFD700">
+        <a-animation attribute="position" to="0 2.3 -15" dur="8000" easing="linear" fill="forwards"></a-animation>
+      </a-sphere>
+      <a-sphere position="0 2.3 5" radius="0.25" color="#0000FF" opacity="0.5">
+        <a-animation attribute="position" to="0 2.3 -15" dur="8000" easing="linear" fill="forwards"></a-animation>
+      </a-sphere>
+
+      <a-entity camera look-controls position="0 1.6 10"></a-entity>
+    </a-scene>
+  </body>
+</html>
